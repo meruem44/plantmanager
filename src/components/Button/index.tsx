@@ -8,13 +8,11 @@ import colors from "../../styles/colors";
 const Button: React.FC = () => {
   return (
     <Container>
-      <Button>
-        <MaterialIcons
-          name="keyboard-arrow-right"
-          size={24}
-          color={colors.white}
-        />
-      </Button>
+      <MaterialIcons
+        name="keyboard-arrow-right"
+        size={24}
+        color={colors.white}
+      />
     </Container>
   );
 };

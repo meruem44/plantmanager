@@ -9,8 +9,8 @@ const App: React.FC = () => {
     <>
       <StatusBar
         backgroundColor={colors.green}
-        barStyle="light-content"
         translucent
+        barStyle="light-content"
       />
       <Welcome />
     </>
