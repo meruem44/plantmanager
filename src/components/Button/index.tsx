@@ -1,18 +1,16 @@
 import React from "react";
+import { RectButtonProps } from "react-native-gesture-handler";
 
-import { Container } from "./styles";
-import { MaterialIcons } from "@expo/vector-icons";
+import { Container, TextButton } from "./styles";
 
-import colors from "../../styles/colors";
+interface IButtonProps extends RectButtonProps {
+  textButton: string;
+}
 
-const Button: React.FC = () => {
+const Button: React.FC<IButtonProps> = ({ textButton, ...rest }) => {
   return (
-    <Container>
-      <MaterialIcons
-        name="keyboard-arrow-right"
-        size={24}
-        color={colors.white}
-      />
+    <Container style={{ elevation: 8 }} {...rest}>
+      <TextButton>{textButton}</TextButton>
     </Container>
   );
 };

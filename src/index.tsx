@@ -1,7 +1,8 @@
 import React from "react";
 import { StatusBar } from "react-native";
 
-import { Welcome } from "./pages/Welcome";
+import { Routes } from "./routes";
+
 import colors from "./styles/colors";
 
 const App: React.FC = () => {
@@ -12,7 +13,7 @@ const App: React.FC = () => {
         translucent
         barStyle="light-content"
       />
-      <Welcome />
+      <Routes />
     </>
   );
 };
